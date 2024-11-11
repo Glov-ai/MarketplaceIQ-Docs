@@ -33,10 +33,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: {
-          routeBasePath: 'blog', // Makes blog accessible at /blog
           showReadingTime: true,
           // Please change any paths you want to your blog posts
-          path: 'blog',
           blogTitle: 'MarketplaceIQ Blog',
           blogDescription: 'Updates and news about MarketplaceIQ',
         },
@@ -50,13 +48,12 @@ const config = {
   themeConfig: {
     // Add search configuration
     navbar: {
-      title: 'MarketplaceIQ',
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'docs',
           position: 'left',
-          label: 'Documentation',
+          label: 'Guides',
         },
         {
           to: '/blog',
