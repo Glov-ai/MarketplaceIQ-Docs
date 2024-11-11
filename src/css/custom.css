@@ -28,3 +28,48 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+/* Add these to your existing custom.css */
+
+/* Adjust swagger-ui to match Docusaurus theme */
+.swagger-ui {
+  font-family: inherit;
+  /* Match your documentation font */
+}
+
+.swagger-ui .info .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--ifm-heading-color);
+}
+
+.swagger-ui .scheme-container {
+  background: var(--ifm-background-color);
+  box-shadow: none;
+}
+
+/* Make the Swagger UI responsive */
+.container .swagger-ui .wrapper {
+  padding: 0;
+  max-width: 100%;
+}
+
+/* Fix dark mode issues */
+html[data-theme='dark'] .swagger-ui {
+  color: var(--ifm-font-color-base);
+}
+
+html[data-theme='dark'] .swagger-ui .opblock-tag,
+html[data-theme='dark'] .swagger-ui .opblock-description-wrapper p,
+html[data-theme='dark'] .swagger-ui .opblock-summary-description {
+  color: var(--ifm-font-color-base);
+}
+
+html[data-theme='dark'] .swagger-ui .opblock {
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+html[data-theme='dark'] .swagger-ui input[type=text] {
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}

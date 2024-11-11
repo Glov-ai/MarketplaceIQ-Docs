@@ -17,9 +17,10 @@ const config = {
       {
         hashed: true,
         language: ["en"],
-        highlightSearchTermsOnTargetPage: true,
-        explicitSearchResultPath: true,
+        indexDocs: true,
+        indexBlog: true,
         docsRouteBasePath: "/",
+        highlightSearchTermsOnTargetPage: true,
       },
     ],
   ],
@@ -54,6 +55,11 @@ const config = {
           sidebarId: 'docs',
           position: 'left',
           label: 'Guides',
+        },       
+        {
+          to: '/api',  // This points to our new API page
+          label: 'API Reference',
+          position: 'left',
         },
         {
           to: '/blog',
