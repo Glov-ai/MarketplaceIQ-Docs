@@ -4,7 +4,7 @@ title: Welcome to MarketplaceIQ
 sidebar_position: 1
 ---
 
-# Welcome to MarketplaceIQ DENEMEEE
+# Welcome to MarketplaceIQ
 
 Welcome to the official MarketplaceIQ documentation. This guide will help you understand and implement our AI-powered product content enrichment solution for your e-commerce platform.
 

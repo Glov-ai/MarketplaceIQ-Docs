@@ -1,8 +1,9 @@
 const config = {
   title: 'MarketplaceIQ Documentation',
   tagline: 'AI-Powered Product Content Enrichment',
-  url: 'https://docs.marketplaceiq.io',
+  url: 'https://marketplaceiq-docs.vercel.app', // This will be updated automatically by Vercel
   baseUrl: '/',
+  trailingSlash: false,
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
