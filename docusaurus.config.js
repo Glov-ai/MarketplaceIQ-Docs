@@ -29,10 +29,17 @@ const config = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          routeBasePath: '/', // Makes docs the root
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
         },
-        blog: false,
+        blog: {
+          routeBasePath: 'blog', // Makes blog accessible at /blog
+          showReadingTime: true,
+          // Please change any paths you want to your blog posts
+          path: 'blog',
+          blogTitle: 'MarketplaceIQ Blog',
+          blogDescription: 'Updates and news about MarketplaceIQ',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -46,14 +53,15 @@ const config = {
       title: 'MarketplaceIQ',
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
+          type: 'docSidebar',
+          sidebarId: 'docs',
           position: 'left',
           label: 'Documentation',
         },
         {
-          type: 'search',
-          position: 'right',
+          to: '/blog',
+          label: 'Blog',
+          position: 'left',
         },
       ],
     },
