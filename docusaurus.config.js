@@ -49,13 +49,15 @@ const config = {
   themeConfig: {
     // Add search configuration
     navbar: {
+      title: 'Guides', 
+      logo: {
+        alt: 'MarketplaceIQ Logo',
+        src: 'img/logo.svg', // For light theme
+        height: 32, // Adjust this value to resize your logo
+      },
+   
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'docs',
-          position: 'left',
-          label: 'Guides',
-        },       
+    
         {
           to: '/api',  // This points to our new API page
           label: 'API Reference',
